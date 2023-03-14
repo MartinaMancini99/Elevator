@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 //Get Access to Unity UI features
 using UnityEngine.UI;
+using TMPro;
 
 public class ShowPuzzle : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class ShowPuzzle : MonoBehaviour
     public Canvas PuzzleCanvas;
 
     //Text
-    public Text UserInputText;
+    public TMP_Text UserInputText;
     public string SecretCode = "9";
 
     //Character
