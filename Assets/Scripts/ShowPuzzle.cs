@@ -12,7 +12,7 @@ public class ShowPuzzle : MonoBehaviour
     public Canvas PuzzleCanvas;
 
     //Text
-    public TMP_Text UserInputText;
+    public TextMeshProUGUI UserInputText;
     public string SecretCode = "9";
 
     //Character
