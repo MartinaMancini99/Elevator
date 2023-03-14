@@ -32,10 +32,10 @@ public class ShowPuzzle : MonoBehaviour
                 EPromptCanvas.enabled = false;
 
                 //stop the player moving
-               // PlayerController.enabled = false;
+                //PlayerController.enabled = false;
 
                 //give the player access to the cursor
-               // Cursor.lockState = CursorLockMode.None;
+                //Cursor.lockState = CursorLockMode.None;
             }
             if(Input.GetKey(KeyCode.Escape))
             {
@@ -53,7 +53,7 @@ public class ShowPuzzle : MonoBehaviour
        // PlayerController.enabled = true;
 
         //Lock the Cursor
-       // Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
 
     }
 }
