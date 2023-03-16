@@ -6,6 +6,7 @@ public class OpenKeypad : MonoBehaviour
 {
     public GameObject keypadOB;
     public GameObject keypadText;
+    public GameObject quizImage;
 
     public bool inReach;
 
@@ -21,6 +22,8 @@ public class OpenKeypad : MonoBehaviour
         {
             inReach = true;
             keypadText.SetActive(true);
+            //quizImage.SetActive(false);
+
         }
     }
 
@@ -30,15 +33,18 @@ public class OpenKeypad : MonoBehaviour
         {
             inReach = false;
             keypadText.SetActive(false);
+            quizImage.SetActive(true);
         }
     }
 
-   // void Update()
-  //  {
- //       if(Input.GetButtonDown("Interact") && inReach)
- //       { 
- //           keypadOB.SetActive(true);
-  //      }
+  void Update()
+  {
+        if(Input.GetButtonDown("Interact") && inReach)
+       { 
+           keypadOB.SetActive(true);
+           quizImage.SetActive(true);
+           keypadText.SetActive(true);
+        }
 
-  //  }
+   }
 }
