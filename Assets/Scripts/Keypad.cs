@@ -7,6 +7,11 @@ using TMPro;
 
 public class Keypad : MonoBehaviour
 {
+    public AudioSource button;
+    public AudioSource clear;
+    public AudioSource wrong;
+    public AudioSource correct;
+    public AudioSource timer;
 
     [SerializeField] private TMP_Text Ans;
     private string Answer = "11";
@@ -14,23 +19,32 @@ public class Keypad : MonoBehaviour
     public void Number(int number)
     {
         Ans.text += number.ToString();
+        button.Play();
+        timer.Play();
     }
 
     public void Execute()
     {
         if(Ans.text == Answer)
-        {
-          Ans.text = "CORRECT ANSWER";
+        { 
+            correct.Play();
+            Ans.text = "CORRECT ANSWER";
+            timer.Pause();
+        
+          
         }
         else
         {
+            wrong.Play();
             Ans.text = "INCORRECT ANSWER";
+            
         }
     }
 
     public void Clear()
     {
         {
+            clear.Play();
             Ans.text="";
         }
     }
