@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\ShowPuzzle.cs" />
     <Compile Include="Assets\Scripts\Wire.cs" />
     <Compile Include="Assets\input\PlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\Elevator_Door.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\Keypad.cs" />
