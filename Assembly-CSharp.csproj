@@ -60,8 +60,9 @@
     <Compile Include="Assets\input\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\Elevator_Door.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
+    <Compile Include="Assets\Scripts\Keypad.cs" />
     <Compile Include="Assets\Scripts\PlayerLook.cs" />
-    <Compile Include="Assets\Scenes\SceneSwitch.cs" />
+    <Compile Include="Assets\Scripts\SceneSwitch.cs" />
     <Compile Include="Assets\Scripts\FootSteps.cs" />
     <Compile Include="Assets\Scripts\ShowInteraction.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
