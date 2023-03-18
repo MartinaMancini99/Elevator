@@ -11,7 +11,7 @@ public class Keypad : MonoBehaviour
     public AudioSource clear;
     public AudioSource wrong;
     public AudioSource correct;
-   public AudioSource timer;
+    //public AudioSource timer;
 
     [SerializeField] private TMP_Text Ans;
     private string Answer = "11";
@@ -20,7 +20,7 @@ public class Keypad : MonoBehaviour
     {
         Ans.text += number.ToString();
         button.Play();
-        timer.Play();
+       // timer.Play();
     }
 
     public void Execute()
@@ -29,7 +29,7 @@ public class Keypad : MonoBehaviour
         { 
             correct.Play();
             Ans.text = "CORRECT ANSWER";
-            timer.Pause();
+          //  timer.Pause();
         
           
         }
