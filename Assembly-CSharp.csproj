@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\SceneSwitch.cs" />
     <Compile Include="Assets\Scripts\OpenKeypad.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
+    <Compile Include="Assets\ShowAlarm_Text.cs" />
     <Compile Include="Assets\Scripts\FootSteps.cs" />
     <Compile Include="Assets\Scripts\RandomizeChildren.cs" />
     <Compile Include="Assets\Scripts\ShowInteraction.cs" />
