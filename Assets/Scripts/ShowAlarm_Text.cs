@@ -5,17 +5,17 @@ using UnityEngine;
 public class ShowAlarm_Text : MonoBehaviour
 {
      public GameObject uiObjectAlarm; 
-     public AudioSource alarm;
+     //public AudioSource alarm;
      void Start()
     {
         uiObjectAlarm.SetActive(false);
-        alarm.Pause();
+       // alarm.Pause();
     }
 
     void OnTriggerEnter()
     {
         uiObjectAlarm.SetActive(true);
-        alarm.Play();
+       //alarm.Play();
     }
 
    void OnTriggerExit()
