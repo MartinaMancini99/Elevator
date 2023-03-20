@@ -59,20 +59,25 @@
     <Compile Include="Assets\Scripts\ShowPuzzle.cs" />
     <Compile Include="Assets\Scripts\Wire.cs" />
     <Compile Include="Assets\input\PlayerInput.cs" />
+    <Compile Include="Assets\Scripts\SceneSwitch3.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\Elevator_Door.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\Keypad.cs" />
     <Compile Include="Assets\Scripts\PlayerLook.cs" />
+    <Compile Include="Assets\Scripts\LoadLevelAfterTime.cs" />
     <Compile Include="Assets\Scripts\SceneSwitch.cs" />
     <Compile Include="Assets\Scripts\OpenKeypad.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
-    <Compile Include="Assets\ShowAlarm_Text.cs" />
+    <Compile Include="Assets\Scripts\ShowAlarm_Text.cs" />
     <Compile Include="Assets\Scripts\FootSteps.cs" />
     <Compile Include="Assets\Scripts\RandomizeChildren.cs" />
     <Compile Include="Assets\Scripts\ShowInteraction.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\ShowUI.cs" />
+    <Compile Include="Assets\Book-Page Curl\scripts\Book.cs" />
+    <Compile Include="Assets\Book-Page Curl\scripts\AutoFlip.cs" />
+    <Compile Include="Assets\Scripts\SceneSwitch_book.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -81,6 +86,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\polytools1\SmokeSims_MotionVectors\Shaders\ASE_Flipbook_Particle_MV.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
