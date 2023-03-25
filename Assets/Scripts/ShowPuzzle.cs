@@ -18,9 +18,29 @@ public class ShowPuzzle : MonoBehaviour
     //Character
     //public CharacterController PlayerController;
 
+    //Reference to Change on the next scene
+
+    //Secret code is not yet entered
+    public bool SecretCodeEntered = false;
+
+    public void Update()
+    {
+        if(UserInputText.text == SecretCode && SecretCodeEntered==false)
+        {
+            Debug.Log("The Secret Code is Correct!");
+            SecretCodeEntered = true;
+           EPromptCanvas.enabled = false;
+           PuzzleCanvas.enabled = false;
+
+           
+        }
+    }
+
+
+
     void OnTriggerStay(Collider TheThingInsideTheTrigger)
     {
-        if(TheThingInsideTheTrigger.tag == "Player")
+        if(TheThingInsideTheTrigger.tag == "Player" && SecretCodeEntered == false)
         {
             //check if they press E
             if(Input.GetKey(KeyCode.E))
@@ -37,7 +57,7 @@ public class ShowPuzzle : MonoBehaviour
                 //give the player access to the cursor
                 //Cursor.lockState = CursorLockMode.None;
             }
-            if(Input.GetKey(KeyCode.Escape))
+            else if(Input.GetKey(KeyCode.Escape))
             {
                 ExitButton();
             }
