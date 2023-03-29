@@ -15,7 +15,7 @@ public class ShowInteraction : MonoBehaviour
 
     void OnTriggerEnter(Collider TheThingEnteringTheTrigger)
     {
-        if(TheThingEnteringTheTrigger.tag == "Player" && PuzzleScript.SecretCodeEntered == false)
+        if(TheThingEnteringTheTrigger.tag == "Player" )
         {
             Debug.Log("Player is by the lift button ");
 
@@ -26,7 +26,7 @@ public class ShowInteraction : MonoBehaviour
 
     void OnTriggerExit(Collider TheThingLeaving)
     {
-        if(TheThingLeaving.tag == "Player" && PuzzleScript.SecretCodeEntered == false)
+        if(TheThingLeaving.tag == "Player")
         {
             Debug.Log("The player has left the lift button panel");
             //hide the Prompt Canvas
