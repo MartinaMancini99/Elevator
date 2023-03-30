@@ -17,6 +17,7 @@ public class ShowInteraction : MonoBehaviour
     {
         if(TheThingEnteringTheTrigger.tag == "Player" )
         {
+            Cursor.lockState = CursorLockMode.None;
             Debug.Log("Player is by the lift button ");
 
             //Show the E propmpt canvas

@@ -20785,6 +20785,10 @@ PrefabInstance:
       propertyPath: m_StepOffset
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 8943679969432901433, guid: 21c11c83e07de7e4f89cb0bfc7e6f717, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21c11c83e07de7e4f89cb0bfc7e6f717, type: 3}
 --- !u!1 &7609435182268986120 stripped

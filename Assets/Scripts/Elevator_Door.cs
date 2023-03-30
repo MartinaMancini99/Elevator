@@ -8,6 +8,10 @@ public class Elevator_Door : MonoBehaviour
     public Transform player;
     public Transform door;
 
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     // Update is called once per frame
     void Update()
