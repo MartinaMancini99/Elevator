@@ -45,7 +45,7 @@ public class PorteTrigger_Quiz1 : MonoBehaviour
 
         Canvas_Quiz1.SetActive(true);
 
-        yield return new WaitForSecondsRealtime(10);
+        yield return new WaitForSecondsRealtime(30);
 
         Canvas_Quiz1.SetActive(false);
 

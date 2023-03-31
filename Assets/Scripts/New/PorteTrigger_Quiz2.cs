@@ -30,7 +30,7 @@ public class PorteTrigger_Quiz2 : MonoBehaviour
     {
 
         Fumo.SetActive(true);
-        yield return new WaitForSecondsRealtime(10);
+        yield return new WaitForSecondsRealtime(30);
         Fumo.SetActive(false);
         Trigger_Quiz2.SetActive(false);  
 

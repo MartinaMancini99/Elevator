@@ -14,13 +14,13 @@ public class Keypad : MonoBehaviour
     //public AudioSource timer;
 
     [SerializeField] private TMP_Text Ans;
-    private string Answer = "11";
+    private string Answer = "9";
 
     public void Number(int number)
     {
         Ans.text += number.ToString();
         button.Play();
-       // timer.Play();
+        //timer.Play();
     }
 
     public void Execute()
