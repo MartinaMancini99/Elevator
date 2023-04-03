@@ -11,6 +11,8 @@ public class PorteTrigger_Quiz1 : MonoBehaviour
     public GameObject Canvas_Quiz1;
     public GameObject Trigger_Quiz1;
     public GameObject Trigger_Quiz2;
+    public GameObject Trigger_Quiz3;
+    public GameObject Trigger_Quiz4;
 
 
     // Start is called before the first frame update
@@ -20,6 +22,8 @@ public class PorteTrigger_Quiz1 : MonoBehaviour
         Canvas_Quiz1.SetActive(false);
 
         Trigger_Quiz2.SetActive(false);
+        Trigger_Quiz3.SetActive(false);
+        Trigger_Quiz4.SetActive(false);
 
         initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
 
@@ -43,9 +47,12 @@ public class PorteTrigger_Quiz1 : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
 
+        //yield return new WaitForSecondsRealtime(2);
+
         Canvas_Quiz1.SetActive(true);
 
-        yield return new WaitForSecondsRealtime(30);
+//30
+        yield return new WaitForSecondsRealtime(5);
 
         Canvas_Quiz1.SetActive(false);
 
