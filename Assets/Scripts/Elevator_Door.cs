@@ -14,13 +14,18 @@ public class Elevator_Door : MonoBehaviour
     }
 
     // Update is called once per frame
+
+
     void Update()
     {
           float distance = Vector3.Distance(player.position, door.position);
 
-        if(distance < 5)
+        if(distance > 6)
+        
         {
+            
             anim.SetBool("Near", true);
+            
         }
         else
         {
