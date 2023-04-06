@@ -20,7 +20,7 @@ public class Elevator_Door : MonoBehaviour
     {
           float distance = Vector3.Distance(player.position, door.position);
 
-        if(distance > 6)
+        if(distance < 5 )
         
         {
             

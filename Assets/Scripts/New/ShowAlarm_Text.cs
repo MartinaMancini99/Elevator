@@ -18,8 +18,10 @@ public class ShowAlarm_Text : MonoBehaviour
        //alarm.Play();
     }
 
-   void OnTriggerExit()
-   {
-    uiObjectAlarm.SetActive(false);
-   }
+//Ho disabilitato queste due righe 
+//affinchè la scritta del blocco ascensore risulti sempre a schermo
+   //void OnTriggerExit()
+   //{
+   // uiObjectAlarm.SetActive(false);
+  // }
 }
