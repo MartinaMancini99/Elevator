@@ -12,14 +12,18 @@ public class PorteTrigger_Quiz2 : MonoBehaviour
      public GameObject Trigger_Quiz3;
       public GameObject Canvas_Quiz2;
       public GameObject Trigger_Quiz4;
+
+    public GameObject Canvas_FrecciaLampeggiante;
     
 
     void Start()
-    {
+    { Canvas_FrecciaLampeggiante.SetActive(false);
         Canvas_Quiz2.SetActive(false);
 
         Trigger_Quiz3.SetActive(false);
         Trigger_Quiz4.SetActive(false);
+
+       
 
          initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
     }
@@ -48,6 +52,8 @@ public class PorteTrigger_Quiz2 : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
 
+          Canvas_FrecciaLampeggiante.SetActive(true);
+
         //GameObject.FindWithTag("Player").transform.DOMove(playerPosition + new Vector3 (0, 0, 6), 5);
         GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
 
@@ -57,7 +63,7 @@ public class PorteTrigger_Quiz2 : MonoBehaviour
         Trigger_Quiz3.SetActive(true);
 
         Trigger_Quiz2.SetActive(false);  
-
+Canvas_FrecciaLampeggiante.SetActive(false);
 
 
        // Fumo.SetActive(false);

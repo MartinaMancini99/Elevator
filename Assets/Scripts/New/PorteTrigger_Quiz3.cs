@@ -13,12 +13,16 @@ public class PorteTrigger_Quiz3: MonoBehaviour
       public GameObject Canvas_Quiz3;
       public GameObject Trigger_Quiz2;
 
+      public GameObject Canvas_FrecciaLampeggiante;
+
     void Start()
     {
          Canvas_Quiz3.SetActive(false);
          
         Trigger_Quiz2.SetActive(false);
         Trigger_Quiz4.SetActive(false);
+
+          Canvas_FrecciaLampeggiante.SetActive(false);
 
          initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
     }
@@ -45,6 +49,9 @@ public class PorteTrigger_Quiz3: MonoBehaviour
         Canvas_Quiz3.SetActive(false);
 
         Cursor.lockState = CursorLockMode.Locked;
+
+        
+          Canvas_FrecciaLampeggiante.SetActive(true);
 
         //GameObject.FindWithTag("Player").transform.DOMove(playerPosition + new Vector3 (0, 0, 6), 5);
         GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);

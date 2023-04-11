@@ -9,9 +9,12 @@ public class PorteTrigger_Quiz4: MonoBehaviour
     public GameObject Canvas_Quiz4;
     public GameObject Trigger_Quiz4;
 
+     public GameObject Canvas_FrecciaLampeggiante;
+
+
     void Start()
     {
-        
+        Canvas_FrecciaLampeggiante.SetActive(false);
     }
     
 
@@ -33,6 +36,7 @@ public class PorteTrigger_Quiz4: MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         yield return new WaitForSecondsRealtime(30);
         Cursor.lockState = CursorLockMode.Locked;
+        Canvas_FrecciaLampeggiante.SetActive(true);
         Canvas_Quiz4.SetActive(false);
         Trigger_Quiz4.SetActive(false);  
 
