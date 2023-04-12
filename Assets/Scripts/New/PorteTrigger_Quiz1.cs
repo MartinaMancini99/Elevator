@@ -17,6 +17,9 @@ public class PorteTrigger_Quiz1 : MonoBehaviour
     public GameObject Canvas_FrecciaLampeggiante;
     public GameObject LuceMovimento;
 
+    public AudioSource ascensore;
+    public AudioSource ding;
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,8 @@ public class PorteTrigger_Quiz1 : MonoBehaviour
         Trigger_Quiz4.SetActive(false);
         Canvas_FrecciaLampeggiante.SetActive(false);
         LuceMovimento.SetActive(false);
+        ascensore.Stop();
+        ding.Stop();
 
         initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
 
@@ -63,6 +68,13 @@ public class PorteTrigger_Quiz1 : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
 
+        //yield return new WaitForSecondsRealtime(2);
+
+        ascensore.Play();
+        yield return new WaitForSecondsRealtime(3);
+
+        ding.Play();
+
         LuceMovimento.SetActive(true);
 
         Canvas_FrecciaLampeggiante.SetActive(true);
@@ -74,6 +86,8 @@ public class PorteTrigger_Quiz1 : MonoBehaviour
         yield return new WaitForSecondsRealtime(6);
 
         LuceMovimento.SetActive(false);
+        ascensore.Stop();
+        ding.Stop();
 
         Trigger_Quiz2.SetActive(true);
 

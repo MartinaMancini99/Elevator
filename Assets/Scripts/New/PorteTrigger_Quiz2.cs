@@ -14,6 +14,11 @@ public class PorteTrigger_Quiz2 : MonoBehaviour
       public GameObject Trigger_Quiz4;
 
     public GameObject Canvas_FrecciaLampeggiante;
+    public GameObject LuceMovimento;
+
+    public AudioSource ascensore;
+    public AudioSource ding;
+
     
 
     void Start()
@@ -22,6 +27,11 @@ public class PorteTrigger_Quiz2 : MonoBehaviour
 
         Trigger_Quiz3.SetActive(false);
         Trigger_Quiz4.SetActive(false);
+
+        LuceMovimento.SetActive(false);
+
+        ascensore.Stop();
+        ding.Stop();
 
        
 
@@ -52,6 +62,15 @@ public class PorteTrigger_Quiz2 : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
 
+        // yield return new WaitForSecondsRealtime(2);
+
+        ascensore.Play();
+        yield return new WaitForSecondsRealtime(3);
+
+        ding.Play();
+
+        LuceMovimento.SetActive(true);
+
           Canvas_FrecciaLampeggiante.SetActive(true);
 
         //GameObject.FindWithTag("Player").transform.DOMove(playerPosition + new Vector3 (0, 0, 6), 5);
@@ -60,10 +79,15 @@ public class PorteTrigger_Quiz2 : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(6);
 
+         LuceMovimento.SetActive(false);
+
+         ascensore.Stop();
+         ding.Stop();
+
         Trigger_Quiz3.SetActive(true);
 
         Trigger_Quiz2.SetActive(false);  
-Canvas_FrecciaLampeggiante.SetActive(false);
+        Canvas_FrecciaLampeggiante.SetActive(false);
 
 
        // Fumo.SetActive(false);
