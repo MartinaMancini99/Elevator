@@ -62,9 +62,10 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
       
 
 //30
-        yield return new WaitForSecondsRealtime(30);
+        yield return new WaitForSecondsRealtime(10);
 
         Canvas_PublicSpeaking.SetActive(false);
+         GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
 
         Cursor.lockState = CursorLockMode.Locked;
 

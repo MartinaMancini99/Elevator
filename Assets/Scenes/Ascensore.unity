@@ -53741,8 +53741,8 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8679245, g: 0.52730507, b: 0.52730507, a: 1}
-  m_Intensity: 2
+  m_Color: {r: 0.8301887, g: 0.33207545, b: 0.33207545, a: 1}
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -53799,7 +53799,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269861495}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5ee10ceab127474983144035b166c68, type: 3}
   m_Name: 
@@ -58917,6 +58917,7 @@ MonoBehaviour:
   LuceMovimento: {fileID: 603137653}
   ascensore: {fileID: 257263492}
   ding: {fileID: 761269856}
+  luciEmergenza: {fileID: 1708899942}
 --- !u!65 &1307767986
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64421,7 +64422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1708899943
 Transform:
   m_ObjectHideFlags: 0
@@ -67124,8 +67125,8 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8867924, g: 0.4467426, b: 0.4467426, a: 1}
-  m_Intensity: 2
+  m_Color: {r: 0.83137256, g: 0.33333334, b: 0.33333334, a: 1}
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -67182,7 +67183,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953871892}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5ee10ceab127474983144035b166c68, type: 3}
   m_Name: 

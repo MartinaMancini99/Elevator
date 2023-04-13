@@ -16,6 +16,8 @@ public class PorteTrigger_Quiz4: MonoBehaviour
     public AudioSource ascensore;
     public AudioSource ding;
 
+    public GameObject luciEmergenza;
+
 
 
     void Start()
@@ -27,6 +29,8 @@ public class PorteTrigger_Quiz4: MonoBehaviour
         ding.Stop();
 
         initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
+
+        luciEmergenza.SetActive(false);
     }
     
 
@@ -45,6 +49,7 @@ public class PorteTrigger_Quiz4: MonoBehaviour
     {
 
         Canvas_Quiz4.SetActive(true);
+        luciEmergenza.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         yield return new WaitForSecondsRealtime(30);
         Cursor.lockState = CursorLockMode.Locked;
