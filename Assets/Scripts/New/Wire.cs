@@ -5,7 +5,6 @@ using UnityEngine;
 public class Wire : MonoBehaviour
 {
     public SpriteRenderer wireEnd;
-    public GameObject lightOn;
     Vector3 startPoint;
     Vector3 startPosition;
     // Start is called before the first frame update
@@ -51,9 +50,7 @@ public class Wire : MonoBehaviour
 
     void Done()
     {
-        // turn on light
-        lightOn.SetActive(true);
-
+    
         // destory the script
         Destroy(this);
     }

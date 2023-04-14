@@ -58,7 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\New\PorteTrigger_Quiz3.cs" />
     <Compile Include="Assets\Scripts\New\FPSInteractionManager.cs" />
-    <Compile Include="Assets\Scripts\Wire.cs" />
+    <Compile Include="Assets\Scripts\New\Wire.cs" />
     <Compile Include="Assets\input\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\SceneSwitch3.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
@@ -79,7 +79,7 @@
     <Compile Include="Assets\Scripts\OpenKeypad.cs" />
     <Compile Include="Assets\Scripts\MoveSceneOnKeyPressed.cs" />
     <Compile Include="Assets\Scripts\New\FlickeringLight.cs" />
-    <Compile Include="Assets\Scripts\Main.cs" />
+    <Compile Include="Assets\Scripts\New\Main.cs" />
     <Compile Include="Assets\Scripts\New\ShowAlarm_Text.cs" />
     <Compile Include="Assets\Scripts\FootSteps.cs" />
     <Compile Include="Assets\Scripts\New\AutoDoor.cs" />
@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\New\PorteTrigger_PublicSpeaking.cs" />
     <Compile Include="Assets\Scripts\New\PorteTrigger_Quiz4.cs" />
     <Compile Include="Assets\Scripts\New\StartAlarm.cs" />
+    <Compile Include="Assets\Scripts\New\Instantiate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
