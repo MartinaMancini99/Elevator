@@ -13,6 +13,8 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
      public GameObject Canva_Message2;
      public AudioSource message;
 
+     public GameObject Trigger_Quiz9;
+
 
    
     void Start()
@@ -21,6 +23,8 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
         Canvas_PublicSpeaking.SetActive(false);
         Canva_Message1.SetActive(false);
         Canva_Message2.SetActive(false);
+
+         Trigger_Quiz9.SetActive(false);
 
  
         message.Stop();
@@ -62,12 +66,18 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
       
 
 //30
-        yield return new WaitForSecondsRealtime(10);
+        yield return new WaitForSecondsRealtime(5);
 
         Canvas_PublicSpeaking.SetActive(false);
          GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
 
         Cursor.lockState = CursorLockMode.Locked;
+
+        yield return new WaitForSecondsRealtime(2);
+
+        Trigger_Quiz9.SetActive(true);
+
+        Trigger_PublicSpeaking.SetActive(false); 
 
         
 
