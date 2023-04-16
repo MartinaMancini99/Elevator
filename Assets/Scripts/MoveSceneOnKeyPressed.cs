@@ -16,7 +16,7 @@ public class MoveSceneOnKeyPressed : MonoBehaviour
 
             if(Input.GetKeyDown(KeyCode.E))
             {
-                SceneManager.LoadScene(newLevel);
+                //SceneManager.LoadScene(newLevel);
             }
         }
     }
