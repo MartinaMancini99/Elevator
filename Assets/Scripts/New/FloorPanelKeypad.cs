@@ -15,7 +15,7 @@ public class FloorPanelKeypad : MonoBehaviour
     //public AudioSource timer;
 
     [SerializeField] private TMP_Text PanelAns;
-    private string PanelAnswer = "5";
+    private string PanelAnswer = "9";
 
     public void PanelNumber(int panelnumber)
     {
@@ -30,7 +30,7 @@ public class FloorPanelKeypad : MonoBehaviour
         {
            panelButtonCorrect.Play();
            PanelAns.text = "CORRECT";
-           //SceneManager.LoadScene(2);
+           SceneManager.LoadScene(2);
 
         }
         else

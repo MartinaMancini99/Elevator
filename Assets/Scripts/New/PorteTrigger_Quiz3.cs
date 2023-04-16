@@ -11,7 +11,7 @@ public class PorteTrigger_Quiz3: MonoBehaviour
       private Vector3 initialLocalPosition;
       public GameObject Trigger_Quiz4;
       public GameObject Canvas_Quiz3;
-      //public GameObject Trigger_Quiz2;
+      public GameObject Trigger_Quiz2;
 
       public GameObject LuceMovimento;
       public GameObject Canvas_FrecciaLampeggiante;
@@ -24,8 +24,8 @@ public class PorteTrigger_Quiz3: MonoBehaviour
     {
         Canvas_Quiz3.SetActive(false);
          
-        //Trigger_Quiz2.SetActive(false);
-        //Trigger_Quiz4.SetActive(false);
+        Trigger_Quiz2.SetActive(false);
+        Trigger_Quiz4.SetActive(false);
 
         Canvas_FrecciaLampeggiante.SetActive(false);
         LuceMovimento.SetActive(false);

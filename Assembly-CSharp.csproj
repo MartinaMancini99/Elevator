@@ -58,11 +58,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\New\PorteTrigger_Quiz3.cs" />
     <Compile Include="Assets\Scripts\New\FPSInteractionManager.cs" />
-    <Compile Include="Assets\Scripts\New\Wire.cs" />
+    <Compile Include="Assets\Book-Page Curl\scripts\Book.cs" />
     <Compile Include="Assets\input\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\SceneSwitch3.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\New\PorteTrigger_Quiz9.cs" />
+    <Compile Include="Assets\Book-Page Curl\scripts\AutoFlip.cs" />
     <Compile Include="Assets\Scripts\Elevator_Door.cs" />
     <Compile Include="Assets\Scripts\New\WebCamScript.cs" />
     <Compile Include="Assets\Scripts\TimerChangeScene.cs" />
@@ -79,12 +80,13 @@
     <Compile Include="Assets\Scripts\OpenKeypad.cs" />
     <Compile Include="Assets\Scripts\MoveSceneOnKeyPressed.cs" />
     <Compile Include="Assets\Scripts\New\FlickeringLight.cs" />
-    <Compile Include="Assets\Scripts\New\Main.cs" />
+    <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\New\ShowAlarm_Text.cs" />
     <Compile Include="Assets\Scripts\FootSteps.cs" />
     <Compile Include="Assets\Scripts\New\AutoDoor.cs" />
     <Compile Include="Assets\Scripts\ShowFloorPanelCanvas.cs" />
     <Compile Include="Assets\Scripts\FlickeringControl.cs" />
+    <Compile Include="Assets\Scripts\RandomizeChildren.cs" />
     <Compile Include="Assets\Scripts\SceneSwitch_book.cs" />
     <Compile Include="Assets\Scripts\New\BlinkEffect.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />

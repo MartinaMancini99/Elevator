@@ -22,8 +22,6 @@ public class PorteTrigger_Quiz4: MonoBehaviour
 
     void Start()
     {
-        Canvas_Quiz4.SetActive(false);
-
         Canvas_FrecciaLampeggiante.SetActive(false);
         LuceMovimento.SetActive(false);
 
@@ -54,7 +52,6 @@ public class PorteTrigger_Quiz4: MonoBehaviour
         luciEmergenza.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         yield return new WaitForSecondsRealtime(30);
-        Canvas_Quiz4.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
 
        //  yield return new WaitForSecondsRealtime(2);
@@ -74,7 +71,7 @@ public class PorteTrigger_Quiz4: MonoBehaviour
 
         ascensore.Stop();
         ding.Stop();
-        
+        Canvas_Quiz4.SetActive(false);
         Trigger_Quiz4.SetActive(false);  
 
     }
