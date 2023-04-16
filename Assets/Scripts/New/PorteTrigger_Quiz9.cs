@@ -36,7 +36,7 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
 
     IEnumerator Piano9()
     {
-        Cursor.lockState = CursorLockMode.None; 
+      //  Cursor.lockState = CursorLockMode.None; 
 
         Canvas_Quiz9_1.SetActive(true);
 
