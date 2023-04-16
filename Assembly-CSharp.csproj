@@ -58,12 +58,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\New\PorteTrigger_Quiz3.cs" />
     <Compile Include="Assets\Scripts\New\FPSInteractionManager.cs" />
-    <Compile Include="Assets\Book-Page Curl\scripts\Book.cs" />
     <Compile Include="Assets\input\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\SceneSwitch3.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\New\PorteTrigger_Quiz9.cs" />
-    <Compile Include="Assets\Book-Page Curl\scripts\AutoFlip.cs" />
     <Compile Include="Assets\Scripts\Elevator_Door.cs" />
     <Compile Include="Assets\Scripts\New\WebCamScript.cs" />
     <Compile Include="Assets\Scripts\TimerChangeScene.cs" />

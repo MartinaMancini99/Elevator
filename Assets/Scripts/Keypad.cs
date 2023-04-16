@@ -14,7 +14,7 @@ public class Keypad : MonoBehaviour
     //public AudioSource timer;
 
     [SerializeField] private TMP_Text Ans;
-    private string Answer = "9";
+    private string Answer = "5";
 
     public void Number(int number)
     {
