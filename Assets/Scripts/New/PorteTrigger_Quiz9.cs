@@ -13,8 +13,9 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
     public GameObject Canvas_Quiz9_3;
     public GameObject Canvas_Quiz9_4;
     public GameObject Trigger_Finale;
-    public GameObject MessaggioFinale1;
-    public GameObject MessaggioFinale2;
+    public GameObject Canva_Finale;
+    public GameObject StanzaFuori;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -25,9 +26,11 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
         Canvas_Quiz9_3.SetActive(false);
         Canvas_Quiz9_4.SetActive(false);
         Trigger_Finale.SetActive(false);
-        MessaggioFinale1.SetActive(false);
-        MessaggioFinale2.SetActive(false);
+        Canva_Finale.SetActive(false);
+        
         initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
+
+        StanzaFuori.SetActive(false);
         
     }
 
@@ -43,7 +46,7 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
 
     IEnumerator Piano9()
     {
-      //  Cursor.lockState = CursorLockMode.None; 
+        Cursor.lockState = CursorLockMode.None; 
 
         Canvas_Quiz9_1.SetActive(true);
 
@@ -84,9 +87,12 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
       //  GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
          yield return new WaitForSecondsRealtime(2);
 
-         Trigger_Finale.SetActive(true);
-         Trigger_Quiz9.SetActive(false);
+        // Trigger_Finale.SetActive(true);
 
+        Cursor.lockState = CursorLockMode.Locked; 
+        //Trigger_Finale.SetActive(true);
+         Trigger_Quiz9.SetActive(false);
+ Trigger_Finale.SetActive(true);
     
     }
 

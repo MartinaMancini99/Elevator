@@ -13,6 +13,10 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
      public GameObject Canva_Message2;
      public AudioSource message;
      public GameObject Trigger_Quiz9;
+     public GameObject Trigger_Finale;
+     public GameObject Canva_Finale;
+
+     public GameObject StanzaFuori;
 
 
    
@@ -23,11 +27,15 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
         Canva_Message1.SetActive(false);
         Canva_Message2.SetActive(false);
         Trigger_Quiz9.SetActive(false);
+        Trigger_Finale.SetActive(false);
+        Canva_Finale.SetActive(false);
 
  
         message.Stop();
 
          initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
+
+         StanzaFuori.SetActive(false);
     }
 
 
