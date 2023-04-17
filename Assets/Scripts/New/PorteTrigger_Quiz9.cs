@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class PorteTrigger_Quiz9 : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
     public GameObject Canvas_Quiz9_2;
     public GameObject Canvas_Quiz9_3;
     public GameObject Canvas_Quiz9_4;
+    public GameObject Trigger_Finale;
+    public GameObject MessaggioFinale1;
+    public GameObject MessaggioFinale2;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +24,9 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
         Canvas_Quiz9_2.SetActive(false);
         Canvas_Quiz9_3.SetActive(false);
         Canvas_Quiz9_4.SetActive(false);
+        Trigger_Finale.SetActive(false);
+        MessaggioFinale1.SetActive(false);
+        MessaggioFinale2.SetActive(false);
         initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
         
     }
@@ -40,29 +47,29 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
 
         Canvas_Quiz9_1.SetActive(true);
 
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(3);
 
         Canvas_Quiz9_1.SetActive(false);
 
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(3);
 
         Canvas_Quiz9_2.SetActive(true);
 
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(3);
 
         Canvas_Quiz9_2.SetActive(false);
 
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(3);
 
         Canvas_Quiz9_3.SetActive(true);
 
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(3);
 
         Cursor.lockState = CursorLockMode.None; 
 
         Canvas_Quiz9_3.SetActive(false);
 
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(3);
 
 
 
@@ -70,10 +77,15 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
 
         Canvas_Quiz9_4.SetActive(true);
 
+        yield return new WaitForSecondsRealtime(5);
 
+        Canvas_Quiz9_4.SetActive(false);
 
+      //  GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
+         yield return new WaitForSecondsRealtime(2);
 
-
+         Trigger_Finale.SetActive(true);
+         Trigger_Quiz9.SetActive(false);
 
     
     }

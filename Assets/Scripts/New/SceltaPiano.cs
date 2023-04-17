@@ -8,7 +8,7 @@ using TMPro;
 public class SceltaPiano : MonoBehaviour
 {
     public AudioSource button;
-    //public AudioSource clear;
+    public AudioSource clear;
     public AudioSource wrong;
     public AudioSource correct;
     //public AudioSource timer;
@@ -25,33 +25,53 @@ public class SceltaPiano : MonoBehaviour
     {
         Ans.text += number.ToString();
         button.Play();
-        //timer.Play();
+        
     }
 
-    public void Execute()
+  
+
+
+     public void Execute()
     {
-        if(Ans.text == Answer1 || Ans.text == Answer2 || Ans.text == Answer3 || Ans.text == Answer4 || Ans.text == Answer5)
+        if(Ans.text == Answer1 )
         { 
             correct.Play();
-            Ans.text = "THANK YOU";
+            Ans.text = "THANK YOU!";
           //  timer.Pause();
         
           
+        }else if(Ans.text== Answer2)
+        {
+             correct.Play();
+            Ans.text = "THANK YOU";
+        } else if(Ans.text == Answer3)
+        {
+             correct.Play();
+            Ans.text = "THANK YOU";
+        } else if(Ans.text == Answer4)
+        {
+             correct.Play();
+            Ans.text = "THANK YOU";
+        } else if(Ans.text == Answer5)
+        {
+             correct.Play();
+            Ans.text = "THANK YOU";
         }
+        
         else
         {
             wrong.Play();
-            Ans.text = "INCORRECT ANSWER";
+            Ans.text = "NOT AVAILABLE";
             
         }
     }
 
-   // public void Clear()
-   // {
-   //     {
-    //        clear.Play();
-   //         Ans.text="";
-    //    }
-    //}
+    public void Clear()
+    {
+        {
+          clear.Play();
+            Ans.text="";
+        }
+    }
 }
 
