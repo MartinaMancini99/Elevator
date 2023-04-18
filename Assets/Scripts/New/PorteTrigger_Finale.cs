@@ -20,6 +20,14 @@ public class PorteTrigger_Finale : MonoBehaviour
 
     public GameObject StanzaFuori;
 
+    public GameObject Piano5;
+    public GameObject Piano4;
+    public GameObject Piano3;
+    public GameObject Piano2;
+    public GameObject Piano1;
+    public GameObject Piano0;
+
+
 
 
     // Start is called before the first frame update
@@ -38,6 +46,13 @@ public class PorteTrigger_Finale : MonoBehaviour
         ding.Stop();
 
         StanzaFuori.SetActive(false);
+
+        Piano5.SetActive(true);
+        Piano4.SetActive(false);
+        Piano3.SetActive(false);
+        Piano2.SetActive(false);
+        Piano1.SetActive(false);
+        Piano0.SetActive(false);
     }
 
      void OnTriggerEnter(Collider other)
@@ -76,6 +91,33 @@ public class PorteTrigger_Finale : MonoBehaviour
 
     ascensore.Play();
         yield return new WaitForSecondsRealtime(3);
+        LuceMovimento.SetActive(true);
+
+        Piano5.SetActive(false);
+        yield return new WaitForSecondsRealtime(1);
+        Piano4.SetActive(true);
+        yield return new WaitForSecondsRealtime(1);
+        Piano4.SetActive(false);
+        yield return new WaitForSecondsRealtime(1);
+        Piano3.SetActive(true);
+        yield return new WaitForSecondsRealtime(1);
+        Piano4.SetActive(false);
+        yield return new WaitForSecondsRealtime(1);
+        Piano3.SetActive(true);
+        yield return new WaitForSecondsRealtime(1);
+        Piano3.SetActive(false);
+        yield return new WaitForSecondsRealtime(1);
+        Piano2.SetActive(true);
+        yield return new WaitForSecondsRealtime(1);
+        Piano2.SetActive(false);
+        yield return new WaitForSecondsRealtime(1);
+        Piano1.SetActive(true);
+        yield return new WaitForSecondsRealtime(1);
+        Piano1.SetActive(false);
+        yield return new WaitForSecondsRealtime(1);
+        Piano0.SetActive(true);
+        
+        
 
         ding.Play();
 

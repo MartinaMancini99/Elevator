@@ -15,6 +15,13 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
     public GameObject Trigger_Finale;
     public GameObject Canva_Finale;
     public GameObject StanzaFuori;
+
+    public GameObject Piano5;
+    public GameObject Piano4;
+    public GameObject Piano3;
+    public GameObject Piano2;
+    public GameObject Piano1;
+    public GameObject Piano0;
     
 
     // Start is called before the first frame update
@@ -27,6 +34,12 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
         Canvas_Quiz9_4.SetActive(false);
         Trigger_Finale.SetActive(false);
         Canva_Finale.SetActive(false);
+        Piano5.SetActive(true);
+        Piano4.SetActive(false);
+        Piano3.SetActive(false);
+        Piano2.SetActive(false);
+        Piano1.SetActive(false);
+        Piano0.SetActive(false);
         
         initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
 

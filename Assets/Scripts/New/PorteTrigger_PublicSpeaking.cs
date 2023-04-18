@@ -18,6 +18,13 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
 
      public GameObject StanzaFuori;
 
+     public GameObject Piano5;
+     public GameObject Piano4;
+     public GameObject Piano3;
+     public GameObject Piano2;
+     public GameObject Piano1;
+     public GameObject Piano0;
+
 
    
     void Start()
@@ -29,6 +36,12 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
         Trigger_Quiz9.SetActive(false);
         Trigger_Finale.SetActive(false);
         Canva_Finale.SetActive(false);
+        Piano5.SetActive(true);
+        Piano4.SetActive(false);
+        Piano3.SetActive(false);
+        Piano2.SetActive(false);
+        Piano1.SetActive(false);
+        Piano0.SetActive(false);
 
  
         message.Stop();
