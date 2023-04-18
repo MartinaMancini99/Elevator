@@ -15,6 +15,8 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
     public GameObject Trigger_Finale;
     public GameObject Canva_Finale;
     public GameObject StanzaFuori;
+    
+    public GameObject LuceMovimento;
 
     public GameObject Piano5;
     public GameObject Piano4;
@@ -40,6 +42,7 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
         Piano2.SetActive(false);
         Piano1.SetActive(false);
         Piano0.SetActive(false);
+        LuceMovimento.SetActive(false);
         
         initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
 

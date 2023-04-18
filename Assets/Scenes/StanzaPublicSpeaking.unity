@@ -256,8 +256,8 @@ MonoBehaviour:
   MessaggioFinale1: {fileID: 1908273278}
   MessaggioFinale2: {fileID: 1691072753}
   Canva_Finale: {fileID: 1908543603}
-  Canvas_FrecciaLampeggiante: {fileID: 254837830}
-  LuceMovimento: {fileID: 625921243}
+  Canvas_FrecciaLampeggiante: {fileID: 563177660}
+  LuceMovimento: {fileID: 438956286}
   ascensore: {fileID: 945311413}
   ding: {fileID: 421846920}
   StanzaFuori: {fileID: 1127692533}
@@ -4229,7 +4229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -53, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &421846919
@@ -7878,7 +7878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -59, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &725588801
@@ -14618,6 +14618,7 @@ MonoBehaviour:
   Trigger_Finale: {fileID: 5383063}
   Canva_Finale: {fileID: 1908543603}
   StanzaFuori: {fileID: 1127692533}
+  LuceMovimento: {fileID: 438956286}
   Piano5: {fileID: 1966261380}
   Piano4: {fileID: 1346550049}
   Piano3: {fileID: 7564576}
@@ -20375,6 +20376,7 @@ MonoBehaviour:
   Trigger_Finale: {fileID: 5383063}
   Canva_Finale: {fileID: 1908543603}
   StanzaFuori: {fileID: 1127692533}
+  LuceMovimento: {fileID: 438956286}
   Piano5: {fileID: 1966261380}
   Piano4: {fileID: 1346550049}
   Piano3: {fileID: 7564576}

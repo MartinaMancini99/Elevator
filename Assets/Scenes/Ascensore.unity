@@ -25828,7 +25828,7 @@ MonoBehaviour:
   Trigger_Quiz4: {fileID: 1307767984}
   Canvas_Quiz3: {fileID: 243972889}
   Trigger_Quiz2: {fileID: 711951493}
-  LuceMovimento: {fileID: 603137653}
+  LuceMovimento: {fileID: 1146998730}
   Canvas_FrecciaLampeggiante: {fileID: 1469590617}
   ascensore: {fileID: 257263492}
   ding: {fileID: 761269856}
@@ -26545,7 +26545,7 @@ MonoBehaviour:
   Trigger_Quiz3: {fileID: 595419196}
   Trigger_Quiz4: {fileID: 1307767984}
   Canvas_FrecciaLampeggiante: {fileID: 1469590617}
-  LuceMovimento: {fileID: 603137653}
+  LuceMovimento: {fileID: 1146998730}
   ascensore: {fileID: 257263492}
   ding: {fileID: 761269856}
 --- !u!1 &624764778
@@ -26611,7 +26611,7 @@ MonoBehaviour:
   Canvas_Quiz4: {fileID: 1587499317}
   Trigger_Quiz4: {fileID: 624764778}
   Canvas_FrecciaLampeggiante: {fileID: 1469590617}
-  LuceMovimento: {fileID: 603137653}
+  LuceEsternaMovimento: {fileID: 0}
   ascensore: {fileID: 257263492}
   ding: {fileID: 761269856}
   luciEmergenza: {fileID: 1708899942}
@@ -28061,7 +28061,7 @@ MonoBehaviour:
   Canvas_Quiz2: {fileID: 283104701}
   Trigger_Quiz4: {fileID: 1307767984}
   Canvas_FrecciaLampeggiante: {fileID: 1469590617}
-  LuceMovimento: {fileID: 603137653}
+  LuceMovimento: {fileID: 1146998730}
   ascensore: {fileID: 257263492}
   ding: {fileID: 761269856}
 --- !u!65 &711951495
@@ -53064,7 +53064,7 @@ GameObject:
   - component: {fileID: 1146998731}
   - component: {fileID: 1146998733}
   m_Layer: 0
-  m_Name: LuceEsterna
+  m_Name: LuceEsternaAscensore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53082,7 +53082,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.6
+  m_Intensity: 2.2
   m_Range: 5.94
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -53140,7 +53140,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146998730}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.33, z: 0.5}
+  m_LocalPosition: {x: 0.42, y: -2.02, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53157,7 +53157,7 @@ Animator:
   m_GameObject: {fileID: 1146998730}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a4a6d2e23126c224f932eaf4ee7ed7ee, type: 2}
+  m_Controller: {fileID: 9100000, guid: c989778d6d7e429489ae0ea7a3d58ee5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -60279,7 +60279,7 @@ MonoBehaviour:
   Canvas_Quiz4: {fileID: 1587499317}
   Trigger_Quiz4: {fileID: 1307767984}
   Canvas_FrecciaLampeggiante: {fileID: 1469590617}
-  LuceMovimento: {fileID: 603137653}
+  LuceEsternaMovimento: {fileID: 0}
   ascensore: {fileID: 257263492}
   ding: {fileID: 761269856}
   luciEmergenza: {fileID: 1708899942}
@@ -61767,7 +61767,7 @@ MonoBehaviour:
   Canvas_Quiz4: {fileID: 1587499317}
   Trigger_Quiz4: {fileID: 1376612245}
   Canvas_FrecciaLampeggiante: {fileID: 1469590617}
-  LuceMovimento: {fileID: 603137653}
+  LuceEsternaMovimento: {fileID: 0}
   ascensore: {fileID: 257263492}
   ding: {fileID: 761269856}
   luciEmergenza: {fileID: 1708899942}
@@ -77262,7 +77262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2041630552
 MonoBehaviour:
   m_ObjectHideFlags: 0

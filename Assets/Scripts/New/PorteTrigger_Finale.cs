@@ -90,11 +90,11 @@ public class PorteTrigger_Finale : MonoBehaviour
     StanzaFuori.SetActive(true);
 
     ascensore.Play();
+    Canvas_FrecciaLampeggiante.SetActive(true);
+    LuceMovimento.SetActive(true);
         yield return new WaitForSecondsRealtime(3);
-        LuceMovimento.SetActive(true);
-
         Piano5.SetActive(false);
-        yield return new WaitForSecondsRealtime(1);
+        yield return new WaitForSecondsRealtime(2);
         Piano4.SetActive(true);
         yield return new WaitForSecondsRealtime(1);
         Piano4.SetActive(false);
@@ -126,6 +126,9 @@ public class PorteTrigger_Finale : MonoBehaviour
         Canvas_FrecciaLampeggiante.SetActive(true);
 
     GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
+
+    LuceMovimento.SetActive(false);
+    
 
         Cursor.lockState = CursorLockMode.Locked;
 
