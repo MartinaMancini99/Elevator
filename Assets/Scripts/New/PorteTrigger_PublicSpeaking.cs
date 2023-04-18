@@ -27,6 +27,8 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
      public GameObject Piano1;
      public GameObject Piano0;
 
+     public GameObject UscitaGioco;
+
 
    
     void Start()
@@ -45,6 +47,7 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
         Piano1.SetActive(false);
         Piano0.SetActive(false);
         LuceMovimento.SetActive(false);
+        UscitaGioco.SetActive(false);
 
  
         message.Stop();

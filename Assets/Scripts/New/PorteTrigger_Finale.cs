@@ -5,16 +5,17 @@ using DG.Tweening;
 
 public class PorteTrigger_Finale : MonoBehaviour
 {
+    
+    private Vector3 initialLocalPosition;
 
     public GameObject Trigger_Finale;
-    private Vector3 initialLocalPosition;
     public GameObject MessaggioFinale1;
     public GameObject MessaggioFinale2;
     public GameObject Canva_Finale;
+   
 
     public GameObject Canvas_FrecciaLampeggiante;
     public GameObject LuceMovimento;
-
     public AudioSource ascensore;
     public AudioSource ding;
 
@@ -30,7 +31,7 @@ public class PorteTrigger_Finale : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -53,6 +54,8 @@ public class PorteTrigger_Finale : MonoBehaviour
         Piano2.SetActive(false);
         Piano1.SetActive(false);
         Piano0.SetActive(false);
+
+       
     }
 
      void OnTriggerEnter(Collider other)
@@ -92,7 +95,8 @@ public class PorteTrigger_Finale : MonoBehaviour
     ascensore.Play();
     Canvas_FrecciaLampeggiante.SetActive(true);
     LuceMovimento.SetActive(true);
-        yield return new WaitForSecondsRealtime(3);
+
+        yield return new WaitForSecondsRealtime(2);
         Piano5.SetActive(false);
         yield return new WaitForSecondsRealtime(2);
         Piano4.SetActive(true);
@@ -120,17 +124,23 @@ public class PorteTrigger_Finale : MonoBehaviour
         
 
         ding.Play();
-
         LuceMovimento.SetActive(true);
-
         Canvas_FrecciaLampeggiante.SetActive(true);
 
-    GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
+        GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
 
-    LuceMovimento.SetActive(false);
+        LuceMovimento.SetActive(false);
     
 
         Cursor.lockState = CursorLockMode.Locked;
+
+        yield return new WaitForSecondsRealtime(2);
+
+        Canvas_FrecciaLampeggiante.SetActive(true);
+
+        Trigger_Finale.SetActive(false);
+        
+
 
 
 

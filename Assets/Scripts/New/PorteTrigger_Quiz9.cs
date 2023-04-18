@@ -24,6 +24,8 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
     public GameObject Piano2;
     public GameObject Piano1;
     public GameObject Piano0;
+
+    public GameObject UscitaGioco;
     
 
     // Start is called before the first frame update
@@ -47,6 +49,7 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
         initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
 
         StanzaFuori.SetActive(false);
+        UscitaGioco.SetActive(false);
         
     }
 
