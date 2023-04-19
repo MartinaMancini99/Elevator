@@ -20,6 +20,8 @@ public class PorteTrigger_Quiz1 : MonoBehaviour
     public AudioSource ascensore;
     public AudioSource ding;
 
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -37,8 +39,10 @@ public class PorteTrigger_Quiz1 : MonoBehaviour
 
         initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
 
+    
 
-        //playerPosition = GameObject.FindWithTag("Player").transform.localPosition;
+
+        
     }
 
     // Update is called once per frame

@@ -27,7 +27,7 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
      public GameObject Piano1;
      public GameObject Piano0;
 
-     public GameObject UscitaGioco;
+     public GameObject Trigger_Ringraziamento;
 
 
    
@@ -47,7 +47,7 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
         Piano1.SetActive(false);
         Piano0.SetActive(false);
         LuceMovimento.SetActive(false);
-        UscitaGioco.SetActive(false);
+        
 
  
         message.Stop();
@@ -55,6 +55,8 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
          initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
 
          StanzaFuori.SetActive(false);
+
+         Trigger_Ringraziamento.SetActive(false);
     }
 
 
@@ -94,7 +96,7 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
         yield return new WaitForSecondsRealtime(10);
 
         Canvas_PublicSpeaking.SetActive(false);
-         GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
+        GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
 
         Cursor.lockState = CursorLockMode.Locked;
 

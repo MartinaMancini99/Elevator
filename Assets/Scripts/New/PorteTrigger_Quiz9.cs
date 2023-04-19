@@ -25,7 +25,7 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
     public GameObject Piano1;
     public GameObject Piano0;
 
-    public GameObject UscitaGioco;
+    public GameObject Trigger_Ringraziamento;
     
 
     // Start is called before the first frame update
@@ -49,7 +49,8 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
         initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
 
         StanzaFuori.SetActive(false);
-        UscitaGioco.SetActive(false);
+        Trigger_Ringraziamento.SetActive(false);
+        
         
     }
 
@@ -111,7 +112,7 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked; 
         //Trigger_Finale.SetActive(true);
          Trigger_Quiz9.SetActive(false);
- Trigger_Finale.SetActive(true);
+         Trigger_Finale.SetActive(true);
     
     }
 

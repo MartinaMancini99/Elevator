@@ -12,6 +12,7 @@ public class PorteTrigger_Finale : MonoBehaviour
     public GameObject MessaggioFinale1;
     public GameObject MessaggioFinale2;
     public GameObject Canva_Finale;
+    public GameObject Trigger_PublicSpeaking;
    
 
     public GameObject Canvas_FrecciaLampeggiante;
@@ -27,7 +28,19 @@ public class PorteTrigger_Finale : MonoBehaviour
     public GameObject Piano2;
     public GameObject Piano1;
     public GameObject Piano0;
+    public  GameObject UscitaGiocoCanva;
 
+    public GameObject pc;
+    public GameObject SediaUfficio;
+    public GameObject computer;
+    public GameObject stanzaPubSpeaking;
+    public GameObject Muri;
+    public GameObject Scrivania;
+    public GameObject Finestre;
+
+    public GameObject Trigger_Ringraziamento;
+
+    
 
 
 
@@ -38,6 +51,7 @@ public class PorteTrigger_Finale : MonoBehaviour
         MessaggioFinale1.SetActive(false);
         MessaggioFinale2.SetActive(false);
         Canva_Finale.SetActive(false);
+        UscitaGiocoCanva.SetActive(false);
 
         initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
 
@@ -54,6 +68,18 @@ public class PorteTrigger_Finale : MonoBehaviour
         Piano2.SetActive(false);
         Piano1.SetActive(false);
         Piano0.SetActive(false);
+
+        SediaUfficio.SetActive(true);
+        pc.SetActive(true);
+        computer.SetActive(true);
+        stanzaPubSpeaking.SetActive(true);
+        Muri.SetActive(true);
+        Scrivania.SetActive(true);
+        Finestre.SetActive(true);
+
+        Trigger_Ringraziamento.SetActive(false);
+
+        
 
        
     }
@@ -139,6 +165,23 @@ public class PorteTrigger_Finale : MonoBehaviour
         Canvas_FrecciaLampeggiante.SetActive(true);
 
         Trigger_Finale.SetActive(false);
+        StanzaFuori.SetActive(false);
+        UscitaGiocoCanva.SetActive(true);
+
+        pc.SetActive(false);
+        SediaUfficio.SetActive(false);
+        computer.SetActive(false);
+        stanzaPubSpeaking.SetActive(false);
+        Muri.SetActive(false);
+        Scrivania.SetActive(false);
+        Finestre.SetActive(false);
+
+        Trigger_Ringraziamento.SetActive(true);
+
+
+        Trigger_PublicSpeaking.SetActive(false);
+   
+        
         
 
 
