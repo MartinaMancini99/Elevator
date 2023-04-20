@@ -47,7 +47,7 @@ public class PorteTrigger_Quiz6: MonoBehaviour
 
         Canvas_Quiz6.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
-        yield return new WaitForSecondsRealtime(30);
+        yield return new WaitForSecondsRealtime(5);    //30
         Cursor.lockState = CursorLockMode.Locked;
 
        //  yield return new WaitForSecondsRealtime(2);

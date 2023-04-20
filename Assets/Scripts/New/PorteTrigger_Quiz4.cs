@@ -8,6 +8,7 @@ public class PorteTrigger_Quiz4: MonoBehaviour
     //private Vector3 playerPosition;
     public GameObject Canvas_Quiz4;
     public GameObject Trigger_Quiz4;
+    public GameObject Trigger_Quiz5;
     private Vector3 initialLocalPosition;
 
     public GameObject Canvas_FrecciaLampeggiante;
@@ -51,7 +52,7 @@ public class PorteTrigger_Quiz4: MonoBehaviour
         Canvas_Quiz4.SetActive(true);
         luciEmergenza.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
-        yield return new WaitForSecondsRealtime(30);
+        yield return new WaitForSecondsRealtime(5);    //30
         Cursor.lockState = CursorLockMode.Locked;
 
        //  yield return new WaitForSecondsRealtime(2);
@@ -72,6 +73,7 @@ public class PorteTrigger_Quiz4: MonoBehaviour
         ascensore.Stop();
         ding.Stop();
         Canvas_Quiz4.SetActive(false);
+        Trigger_Quiz5.SetActive(true);
         Trigger_Quiz4.SetActive(false);  
 
     }
