@@ -7,6 +7,9 @@ public class PorteTrigger_Quiz5: MonoBehaviour
 {
     //private Vector3 playerPosition;
     public GameObject Canvas_Quiz5;
+    public GameObject Breadboard;
+    public Camera MainCamera;
+    public Camera CameraBreaboard;
     public GameObject Trigger_Quiz5;
     public GameObject Trigger_Quiz6;
     private Vector3 initialLocalPosition;
@@ -16,7 +19,6 @@ public class PorteTrigger_Quiz5: MonoBehaviour
 
     public AudioSource ascensore;
     public AudioSource ding;
-
 
 
     void Start()
@@ -45,10 +47,24 @@ public class PorteTrigger_Quiz5: MonoBehaviour
 
     IEnumerator Piano5()
     {
-
-        Canvas_Quiz5.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
-        yield return new WaitForSecondsRealtime(5);     //30
+        Canvas_Quiz5.SetActive(true);
+        
+        yield return new WaitForSecondsRealtime(5);
+        Canvas_Quiz5.SetActive(false);
+
+        CameraBreaboard.enabled = true;
+        MainCamera.enabled = false;
+
+        Breadboard.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.None;
+        yield return new WaitForSecondsRealtime(15);     //30
+        Breadboard.SetActive(false);
+
+        MainCamera.enabled = true;
+        CameraBreaboard.enabled = false;
+
         Cursor.lockState = CursorLockMode.Locked;
 
        //  yield return new WaitForSecondsRealtime(2);
@@ -60,17 +76,18 @@ public class PorteTrigger_Quiz5: MonoBehaviour
         LuceMovimento.SetActive(true);
         Canvas_FrecciaLampeggiante.SetActive(true);
 
-         GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
+        GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
 
-        yield return new WaitForSecondsRealtime(6);
+        yield return new WaitForSecondsRealtime(5);
 
         LuceMovimento.SetActive(false);
+        Canvas_FrecciaLampeggiante.SetActive(false);
 
         ascensore.Stop();
         ding.Stop();
-        Canvas_Quiz5.SetActive(false);
+        
         Trigger_Quiz6.SetActive(true);
-        Trigger_Quiz5.SetActive(false);  
+        Trigger_Quiz5.SetActive(false);
 
     }
 }

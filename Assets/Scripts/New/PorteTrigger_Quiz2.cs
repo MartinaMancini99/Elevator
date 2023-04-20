@@ -13,6 +13,8 @@ public class PorteTrigger_Quiz2 : MonoBehaviour
       public GameObject Canvas_Quiz2;
       public GameObject Trigger_Quiz4;
 
+    public Camera MainCamera;
+
     public GameObject Canvas_FrecciaLampeggiante;
     public GameObject LuceMovimento;
 
@@ -55,8 +57,12 @@ public class PorteTrigger_Quiz2 : MonoBehaviour
 
         Canvas_Quiz2.SetActive(true);
 
+        //MainCamera.transform.position = new Vector3(0.03f, 0.631f, -0.01f);
+
+        Cursor.lockState = CursorLockMode.None;
+
         //30
-        yield return new WaitForSecondsRealtime(5);
+        yield return new WaitForSecondsRealtime(30);
 
          Canvas_Quiz2.SetActive(false);
 
@@ -77,21 +83,18 @@ public class PorteTrigger_Quiz2 : MonoBehaviour
         GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
 
 
-        yield return new WaitForSecondsRealtime(6);
+        yield return new WaitForSecondsRealtime(5);
 
          LuceMovimento.SetActive(false);
+         Canvas_FrecciaLampeggiante.SetActive(false);
 
-         ascensore.Stop();
+        ascensore.Stop();
          ding.Stop();
 
         Trigger_Quiz3.SetActive(true);
 
         Trigger_Quiz2.SetActive(false);  
-        Canvas_FrecciaLampeggiante.SetActive(false);
-
-
-       // Fumo.SetActive(false);
-        //Trigger_Quiz2.SetActive(false);  
+       
 
     }
 }

@@ -8,8 +8,10 @@ public class Main : MonoBehaviour
     static public Main Instance;
 
     public int switchCount;
-    public GameObject winText;
+    //public GameObject winText;
     private int onCount = 0;
+
+    public GameObject Breadboard;
 
     private void Awake()
     {
@@ -17,10 +19,10 @@ public class Main : MonoBehaviour
     }
     public void SwitchChange(int points) {
         onCount = onCount + points;
-        if (onCount == switchCount)
-        {
-            winText.SetActive(true);
-        }
+        //if (onCount == switchCount)
+        //{
+           // winText.SetActive(true);
+        //}
     }
     private void Update()
     {

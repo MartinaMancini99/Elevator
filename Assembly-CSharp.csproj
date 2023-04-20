@@ -59,7 +59,7 @@
     <Compile Include="Assets\Scripts\New\PorteTrigger_Quiz3.cs" />
     <Compile Include="Assets\Scripts\New\FPSInteractionManager.cs" />
     <Compile Include="Assets\Scripts\New\PorteTrigger_Ringraziamento.cs" />
-    <Compile Include="Assets\Scripts\New\Wire.cs" />
+    <Compile Include="Assets\Scripts\New\Keypad_quiz6.cs" />
     <Compile Include="Assets\input\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\SceneSwitch3.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
@@ -71,14 +71,14 @@
     <Compile Include="Assets\Scripts\New\PorteTrigger_Quiz5.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\New\PorteTrigger_Quiz1.cs" />
-    <Compile Include="Assets\Scripts\Keypad.cs" />
+    <Compile Include="Assets\Scripts\New\Keypad.cs" />
     <Compile Include="Assets\Scripts\PlayerLook.cs" />
     <Compile Include="Assets\Scripts\New\SceltaPiano.cs" />
     <Compile Include="Assets\Scripts\New\PorteTrigger_Quiz2.cs" />
     <Compile Include="Assets\Scripts\New\FirstPersonCharacterController.cs" />
     <Compile Include="Assets\Scripts\LoadLevelAfterTime.cs" />
-    <Compile Include="Assets\Scripts\SceneSwitch.cs" />
     <Compile Include="Assets\Scripts\New\Main.cs" />
+    <Compile Include="Assets\Scripts\SceneSwitch.cs" />
     <Compile Include="Assets\Scripts\Lighting.cs" />
     <Compile Include="Assets\Scripts\New\FloorPanelKeypad.cs" />
     <Compile Include="Assets\Scripts\OpenKeypad.cs" />
@@ -90,9 +90,9 @@
     <Compile Include="Assets\Scripts\New\AutoDoor.cs" />
     <Compile Include="Assets\Scripts\ShowFloorPanelCanvas.cs" />
     <Compile Include="Assets\Scripts\FlickeringControl.cs" />
-    <Compile Include="Assets\Scripts\RandomizeChildren.cs" />
     <Compile Include="Assets\Scripts\SceneSwitch_book.cs" />
     <Compile Include="Assets\Scripts\New\BlinkEffect.cs" />
+    <Compile Include="Assets\Scripts\New\Wire.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\ShowUI.cs" />
     <Compile Include="Assets\Scripts\New\PorteTrigger_PublicSpeaking.cs" />

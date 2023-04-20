@@ -83,17 +83,17 @@ public class PorteTrigger_Quiz1 : MonoBehaviour
         GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
 
 
-        yield return new WaitForSecondsRealtime(6);
+        yield return new WaitForSecondsRealtime(5);
 
         LuceMovimento.SetActive(false);
+        Canvas_FrecciaLampeggiante.SetActive(false);
+
         ascensore.Stop();
         ding.Stop();
 
         Trigger_Quiz2.SetActive(true);
 
         Trigger_Quiz1.SetActive(false);  
-
-
 
     }
 

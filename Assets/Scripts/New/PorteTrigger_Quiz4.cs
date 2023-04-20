@@ -53,6 +53,7 @@ public class PorteTrigger_Quiz4: MonoBehaviour
         luciEmergenza.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         yield return new WaitForSecondsRealtime(5);    //30
+        Canvas_Quiz4.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
 
        //  yield return new WaitForSecondsRealtime(2);
@@ -66,16 +67,18 @@ public class PorteTrigger_Quiz4: MonoBehaviour
 
          GameObject.FindWithTag("Player").transform.DOLocalMove(initialLocalPosition, 5);
 
-        yield return new WaitForSecondsRealtime(6);
+        yield return new WaitForSecondsRealtime(5);
 
         LuceMovimento.SetActive(false);
+        Canvas_FrecciaLampeggiante.SetActive(false);
 
         ascensore.Stop();
         ding.Stop();
-        Canvas_Quiz4.SetActive(false);
+        
         Trigger_Quiz5.SetActive(true);
-        Trigger_Quiz4.SetActive(false);  
+        Trigger_Quiz4.SetActive(false);
 
+        
     }
 }
 
