@@ -23,12 +23,12 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Scene6.unity
+    guid: e424fafb29946644eb7af281ed962d0c
+  - enabled: 1
+    path: Assets/Scenes/Scene3_pt1.unity
+    guid: 04df9ebdd2ed34543899c5ae46c3c3a3
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

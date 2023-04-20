@@ -22,7 +22,7 @@ public class PorteTrigger_Quiz2 : MonoBehaviour
     
 
     void Start()
-    {   Canvas_FrecciaLampeggiante.SetActive(false);
+    { Canvas_FrecciaLampeggiante.SetActive(false);
         Canvas_Quiz2.SetActive(false);
 
         Trigger_Quiz3.SetActive(false);
