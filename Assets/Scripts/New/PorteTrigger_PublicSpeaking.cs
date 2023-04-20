@@ -15,10 +15,14 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
      public GameObject Trigger_Quiz9;
      public GameObject Trigger_Finale;
      public GameObject Canva_Finale;
+    public AudioSource ascensore;
+    public AudioSource ding;
+
 
      public GameObject StanzaFuori;
 
      public GameObject LuceMovimento;
+     public GameObject Canvas_FrecciaLampeggiante;
 
      public GameObject Piano5;
      public GameObject Piano4;
@@ -28,6 +32,10 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
      public GameObject Piano0;
 
      public GameObject Trigger_Ringraziamento;
+     public GameObject Ringraziamento;
+     
+     public GameObject UscitaGiocoCanva;
+
 
 
    
@@ -46,17 +54,22 @@ public class PorteTrigger_PublicSpeaking : MonoBehaviour
         Piano2.SetActive(false);
         Piano1.SetActive(false);
         Piano0.SetActive(false);
+
         LuceMovimento.SetActive(false);
+        Canvas_FrecciaLampeggiante.SetActive(false);
         
-
- 
+        ascensore.Stop();
+        ding.Stop();
         message.Stop();
+        
+        initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
 
-         initialLocalPosition = GameObject.FindWithTag("Player").transform.localPosition;
+        StanzaFuori.SetActive(false);
 
-         StanzaFuori.SetActive(false);
-
-         Trigger_Ringraziamento.SetActive(false);
+        Trigger_Ringraziamento.SetActive(false);
+        Ringraziamento.SetActive(false);
+        
+        UscitaGiocoCanva.SetActive(false);
     }
 
 

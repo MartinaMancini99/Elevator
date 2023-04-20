@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,7 +37,7 @@ public class SceltaPiano : MonoBehaviour
         if(Ans.text == Answer1 )
         { 
             correct.Play();
-            Ans.text = "THANK YOU!";
+            Ans.text = "THANK YOU";
           //  timer.Pause();
         
           
@@ -74,4 +75,5 @@ public class SceltaPiano : MonoBehaviour
         }
     }
 }
+
 

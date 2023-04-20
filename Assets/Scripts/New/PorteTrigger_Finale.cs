@@ -39,6 +39,7 @@ public class PorteTrigger_Finale : MonoBehaviour
     public GameObject Finestre;
 
     public GameObject Trigger_Ringraziamento;
+    public GameObject Ringraziamento;
 
     
 
@@ -78,6 +79,7 @@ public class PorteTrigger_Finale : MonoBehaviour
         Finestre.SetActive(true);
 
         Trigger_Ringraziamento.SetActive(false);
+        Ringraziamento.SetActive(false);
 
         
 
@@ -162,7 +164,7 @@ public class PorteTrigger_Finale : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(2);
 
-        Canvas_FrecciaLampeggiante.SetActive(true);
+        Canvas_FrecciaLampeggiante.SetActive(false);
 
         Trigger_Finale.SetActive(false);
         StanzaFuori.SetActive(false);

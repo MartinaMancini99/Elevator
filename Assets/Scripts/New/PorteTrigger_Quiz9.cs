@@ -26,6 +26,7 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
     public GameObject Piano0;
 
     public GameObject Trigger_Ringraziamento;
+    public GameObject Ringraziamento;
     
 
     // Start is called before the first frame update
@@ -50,6 +51,7 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
 
         StanzaFuori.SetActive(false);
         Trigger_Ringraziamento.SetActive(false);
+        Ringraziamento.SetActive(false);
         
         
     }
@@ -119,3 +121,4 @@ public class PorteTrigger_Quiz9 : MonoBehaviour
 
     
 }
+
